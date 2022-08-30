@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+header{
+    padding: 10px 25px;
+    /* width: 100%; */
+}
+.content{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.logo-block{
+    width: 30%;
+    min-width:100px;
+    background-color: blue;
+    
+}
+.nav-block{
+    width: 70%;
+    background-color: yellow;
+}
+.img-block{
+    padding: 100px;
+    text-align: center;
+    height: 200px;
+}
+.img-block>img{
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+.test-h{
+    height: 100%;
+    max-height: 300px;
+    min-height: 100px;
+    background-color: rebeccapurple;
+}
+
+nav>ul{
+    display: inline-block;
+}
+nav li{
+    display: block;
+    list-style: none;
+    margin-left: 20px;
+
+}
+nav button{
+    display: inline-block;
+}
+.center-content{
+    padding: 100px 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.table{
+    display: table;
+    width: 1200px;
+}
+.row{
+    display: table-row;
+}
+.cell{
+    display: table-cell;
+}
+.text-container{
+    width: 631px;
+    vertical-align: middle;
+}
+.img-container{
+    width: 470px;
+    text-align: center;
+}
+.img-container>img{
+    width: 200px;
+    height: 200px;
+}
+.border{
+    border-bottom:2px solid #333;
+}
+h1{
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+h1::before{
+    content: "<";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+.slider{
+    background-color: yellow;
+    padding: 100px 0;
+}
+.slider-container{
+    width: 900px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider-container>div{
+    height: 100px;
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.slider-container div:first-child,
+.slider-container div:last-child{
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+.slider-container div:first-child{
+    left: -100px;
+}
+.slider-container div:last-child{
+    right: -100px;
+}

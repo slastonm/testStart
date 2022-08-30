@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.phone{
+    background-image: url('../img/1.webp'),url("../img/bg.jpeg");
+    background-color: yellow;
+    height: 480px;
+    /* width: 480px; */
+}
+.smile{
+    background-image: url('../img/smile.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-position: center;
+    background-position: bottom center;
+    background-position: top 50px left 300px;
+}
+.size{
+    background-image: url('../img/avatar.png');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/sprite-icon-29.jpg');
+    background-position: top -17px left -17px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+.icon:hover{
+    background-position: top -101px left -17px;
+}
+.icon.disabled{
+    background-position: top -187px left -17px;
+}
