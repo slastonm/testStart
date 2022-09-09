@@ -47,6 +47,7 @@ h1{
         flex-direction: column;
     }
 } */
+
 @media screen and (min-width:420px) and (max-width:680px) {
     .responsive{
         padding: 140px;
@@ -139,4 +140,3 @@ h2{
         --bg:#fff
     }
 }
-
