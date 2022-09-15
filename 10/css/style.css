@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  fill: red;
+  stroke: gold;
+}
+
+svg path {
+  fill: #333;
+}
+
+@keyframes example {
+  from {
+    background-color: blue;
+    border-radius: 0;
+  }
+
+  to {
+    background-color: yellow;
+    border-radius: 100%;
+  }
+}
+
+.example {
+  height: 100px;
+  border-radius: 0;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes pro {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+  1% {
+    top: 20px;
+    left: 40px;
+    background-color: yellow;
+  }
+  25% {
+    top: 20px;
+    left: 40px;
+    background-color: yellow;
+  }
+
+  50% {
+    top: 40px;
+    left: 60px;
+    background-color: blue;
+  }
+
+  75% {
+    top: 20px;
+    left: 40px;
+    background-color: yellow;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    background-color: green;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.pro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-duration: 5s;
+  animation-name: pro;
+  /* animation-iteration-count: 2; */
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes move {
+  from {
+    left: 0px;
+    rotate: 0deg;}
+  to {
+    rotate: 30deg;
+    left: 1800px;}
+}
+.animatio-type>div {
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(54, 74, 11);
+  font-weight: bold;
+  position: relative;
+  animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.linear {animation-timing-function: linear}
+.ease {animation-timing-function: ease;}
+.ease-in {animation-timing-function: ease-in;}
+.ease-out {animation-timing-function: ease-out;}
+.ease-in-out {animation-timing-function: ease-in-out;}
+.custom{
+  /* animation: move 5s linear infinite; */
+  animation-timing-function: cubic-bezier(.49,1.94,.56,.01);
+}
+.transition{
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  /* transition: width 2s, background-color 4s; */
+  transition: all 4s;
+  /* rotate: 30deg; */
+  /* transition-delay: 5s; */
+}
+.transition:hover{
+  /* width: 200px; */
+  background-color: green;
+  /* transform: ; */
+  /* translate: 50px 100px;*/
+  /* scale: 2.5 2.5;  */
+  /* transform: skew(50deg, 10deg); */
+  transform: rotateY(180deg);
+}
+
